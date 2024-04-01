@@ -1,4 +1,3 @@
-from webapp import keep_alive
 import time
 import discord
 import json
@@ -18,8 +17,6 @@ intents.messages = True
 intents.members = True
 client = commands.Bot(command_prefix='up!', intents=intents)
 client.activity = discord.Activity (type=discord.ActivityType.competing, name="With traditional UptimeRobot")
-
-keep_alive()
 
 # Define a function to ping a website with a given method and time interval
 async def ping_website(url, method, time_interval, ping_count, user_id, website):
